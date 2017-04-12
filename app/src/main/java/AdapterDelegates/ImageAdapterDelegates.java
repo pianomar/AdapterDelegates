@@ -48,7 +48,7 @@ public class ImageAdapterDelegates extends AdapterDelegate<List<BaseMessage>>{
     protected void onBindViewHolder(@NonNull List<BaseMessage> items, int position, @NonNull RecyclerView.ViewHolder holder, @NonNull List<Object> payloads) {
         ImageMessageViewHolder vh = (ImageMessageViewHolder) holder;
         ImageMessage imageMessage = (ImageMessage) items.get(position);
-
+//comment
         requestManager.load(imageMessage.getImage()).into(vh.message);
     }
 
